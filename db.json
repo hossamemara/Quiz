@@ -1,0 +1,112 @@
+{
+  "students": [
+    {
+      "userName": "hossam",
+      "email": "hossam.emara@z2data.com",
+      "password": "123",
+      "studentSubject": [
+        {
+          "name": "اللغة العربية",
+          "degree": 1,
+          "id": "1",
+          "email": "hossam.emara@z2data.com"
+        },
+        {
+          "name": "الرياضيات",
+          "degree": 2,
+          "id": "2",
+          "email": "hossam.emara@z2data.com"
+        },
+        {
+          "name": "اللغة الانجليزية",
+          "degree": 0,
+          "id": "3",
+          "email": "hossam.emara@z2data.com"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "userName": "hussam",
+      "email": "hussam.emara@z2data.com",
+      "password": "123",
+      "studentSubject": [
+        {
+          "name": "اللغة العربية",
+          "degree": 1,
+          "id": "1",
+          "email": "hussam.emara@z2data.com"
+        }
+      ],
+      "id": 2
+    }
+  ],
+  "doctor": [
+    {
+      "userName": "admin",
+      "email": "admin@z2data.com",
+      "password": "123",
+      "id": 1
+    }
+  ],
+  "loginUser": [
+    {
+      "roleType": "students",
+      "userName": "hossam",
+      "userId": 1,
+      "id": 1
+    }
+  ],
+  "subjects": [
+    {
+      "name": "اللغة العربية",
+      "questions": [
+        {
+          "question": "اعراب كلمه الناس",
+          "answer1": "فاعل",
+          "answer2": "مفعول به",
+          "answer3": "حرف جر",
+          "answer4": "اسم مفعول",
+          "correctAnswer": "فاعل"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "الرياضيات",
+      "questions": [
+        {
+          "question": "5*5  ",
+          "answer1": "25",
+          "answer2": "50",
+          "answer3": "1",
+          "answer4": "5",
+          "correctAnswer": "25"
+        },
+        {
+          "question": "8/8",
+          "answer1": "2",
+          "answer2": "1",
+          "answer3": "0",
+          "answer4": "45",
+          "correctAnswer": "1"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "name": "اللغة الانجليزية",
+      "questions": [
+        {
+          "question": "This Is ",
+          "answer1": "Tree",
+          "answer2": "Cat",
+          "answer3": "Rat",
+          "answer4": "Car",
+          "correctAnswer": "Tree"
+        }
+      ],
+      "id": 3
+    }
+  ]
+}

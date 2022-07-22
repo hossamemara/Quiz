@@ -1,0 +1,22 @@
+
+<mat-toolbar color="primary" class="navbar navbar-default py-2" dir="rtl">
+    <div class="container"> 
+      <div class="navbar-header">
+        <a class="navbar-brand"  routerLinkActive="active" routerLink="welcome"><img src="../../../../assets/images/school_white_24dp.svg" alt=""> فاينال</a>
+      </div>
+        <div class="d-flex align-items-center">
+        <ul class="nav navbar-right d-flex align-items-center">
+          <li *ngIf="user?.roleType == 'doctor'" routerLinkActive="active"><a routerLink="/new-exam">أختبار جديد</a></li>
+          <li *ngIf="user?.roleType == 'doctor'" routerLinkActive="active"><a routerLink="/students">الطلاب</a></li>
+          <li *ngIf="user != null" routerLinkActive="active"><a routerLink="/subjects">المواد </a></li>
+          <li *ngIf="user != null" routerLinkActive="active" (click)="logout()" ><a >خروج</a></li>
+          <li  *ngIf="user === null" routerLinkActive="active"><a routerLink="/login">دخول</a></li>
+          <li  *ngIf="user === null" routerLinkActive="active"><a routerLink="/register">تسجيل</a></li>
+          <li *ngIf="user?.userName != null" class="username">{{user?.userName}}</li>
+        </ul>
+  
+      </div>
+
+    </div>
+  </mat-toolbar>
+  
